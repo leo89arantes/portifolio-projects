@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  display: flex;
+  position: relative;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #13293D;
+  height: 100vh;
+  color: #fff;
+  z-index: 0;
+  position: relative;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  display: block;
+}
+
+.sidebar a:hover {
+  background-color: #006494;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background: linear-gradient(to bottom, #bcd0fd, #75bcce);
+}
+
+.profile-section {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: url('/assets/leo.jpeg') no-repeat center center/cover;
+  border: 5px solid #ffffff;
+  box-shadow: 0 0 15px rgb(0, 255, 242);
+}
+
+.profile-info h2 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.social-section {
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 0 5px;
+  overflow: hidden;
+}
+
+.whatsapp {
+  background-color: #25D366;
+  padding: 0;
+  margin: 0;
+}
+
+.linkedin {
+  background-color: #0077B5;
+  padding: 0;
+}
+
+.github {
+  background-color: #ffffff;
+}
+
+.instagram {
+  background-color: #E4405F;
+}
+
+.social-links img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Estilos para o menu */
+.menu-section {
+  margin-top: 20px;
+}
+
+.menu-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-section ul li {
+  margin-bottom: 10px;
+}
+
+.menu-section ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.menu-section ul li a .icon {
+  margin-right: 10px;
+}
+
+.menu-section ul li a span {
+  margin-left: 10px;
+}
+
+
+/* Estilos para o conteúdo */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.content-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-left,
+.content-right {
+  flex: 1;
+}
+
+.content-left h3,
+.content-left h4 {
+  margin: 0;
+}
+
+.content-left {
+  text-align: left;
+}
+
+.content-right {
+  text-align: right;
+}
+
+.content-right img {
+  max-width: 100%;
+  height: auto;
+}
