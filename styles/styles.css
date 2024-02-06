@@ -11,22 +11,26 @@ body {
 .sidebar {
   width: 250px;
   background-color: #13293D;
-  height: 100vh;
   color: #fff;
   z-index: 0;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow-y: auto; 
 }
 
 .sidebar ul {
   list-style: none;
   padding: 0;
   margin: 20px 0;
+  margin-left: ;
 }
 
 .sidebar a {
   text-decoration: none;
   color: #fff;
-  padding: 10px;
+  padding: 5px 5px 5px 20px;
   display: block;
 }
 
@@ -37,6 +41,8 @@ body {
 .content {
   flex: 1;
   background: linear-gradient(to bottom, #bcd0fd, #75bcce);
+  padding-left: 250px;
+  width: 80%;
 }
 
 .profile-section {
@@ -58,6 +64,7 @@ body {
 
 .profile-info h2 {
   margin-top: 10px;
+  margin-bottom: 0;
   text-align: center;
 }
 
@@ -71,7 +78,7 @@ body {
 .social-links {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  
 }
 
 .social-links a {
@@ -292,4 +299,199 @@ border: none;
 	border:none;
 	font-family: calibri;
 	background-color: #262525;
+}
+
+
+/* Seção de Serviços  */
+
+.servicos
+{
+	height: 600px;
+	background-color: #f1d763;
+
+}
+
+.servicos-textos p:nth-child(1)
+{
+	font-family: calibri;
+	font-weight: bold;
+	color: #3e3d3d;
+	font-size:30px;
+	line-height: 0px;
+
+}
+
+.servicos-textos p:nth-child(2)
+{
+	font-family: calibri;
+	font-weight: bold;
+	color: #3e3d3d;
+	font-size:15px;
+	line-height: 5px;
+
+}
+
+.servicos-textos p:nth-child(3)
+{
+	font-family: calibri;
+	color: #7e7d7d;
+	
+}
+
+ .servicos-textos
+{
+	width: 500px;
+	margin: 50px 0px 0px 50px;
+	
+}
+
+.box1, .box2, .box3, .box4
+{
+	width: 260px;
+	height: 320px;
+  background-color: #39b500;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+	display: flex;
+	justify-content: center;
+	align-items:  center;
+	flex-direction: column;
+
+}
+
+.conteudo-box 
+{
+	display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+	
+}
+
+.box1
+{
+	background-image: url("img/services-1.png");
+}
+
+
+.box2
+{
+	background-image: url("img/services-2.png");
+}
+
+
+.box3
+{
+	background-image: url("img/servies-3.png");
+}
+
+.box4
+{
+	background-image: url("img/servies-3.png");
+}
+
+
+.box1 span,
+.box2 span,
+.box3 span,
+.box4 span
+{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: calibri;
+	font-weight: bold;
+	margin-top: 10px;
+	
+}
+
+.box1 p:nth-child(2),
+.box2 p:nth-child(2),
+.box3 p:nth-child(2),
+.box4 p:nth-child(2)
+{
+	color: #ffffff;
+	font-family: calibri;
+	font-size: 23px;
+	line-height: 0px;
+}
+
+.box1 p:nth-child(3),
+.box2 p:nth-child(3),
+.box3 p:nth-child(3),
+.box4 p:nth-child(3)
+{
+	font-family: calibri;
+	text-align: center;
+	width: 250px;
+	color: #000000;
+	margin: 0px 0px 20px 0px;
+	
+}
+
+.box1 button,
+.box2 button,
+.box3 button,
+.box4 button
+
+{
+	width: 100px;
+	height: 50px;
+  color: #1252c7;
+	background-color: #ffffff;
+	border:none;
+	outline: none;
+	border-radius: 5px;
+	margin-bottom: 10px;
+
+}
+
+
+
+/* Seção footer */
+
+footer
+{
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+footer p
+{
+	font-family: calibri;
+}
+
+footer p:nth-child(1)
+{
+	font-weight: bold;
+	color: #191919;
+	line-height: 10px;
+	font-size: 30px;
+}
+
+footer p:nth-child(2)
+{
+	font-size: 16px;
+	color: #7e7d7d;
+	width: 500px;
+	text-align: center;
+}
+
+.copy
+{
+	color: #565555;
+	font-size: 13px;
+	position: absolute;
+	left: 50%;
+	bottom: 10px;
+	transform: translateX(-50%);
 }
