@@ -39,7 +39,6 @@ body {
 
 .content {
   flex: 1;
-  background: linear-gradient(to bottom, #bcd0fd, #75bcce);
   padding-left: 250px;
   width: 80%;
 }
@@ -541,7 +540,7 @@ footer p:nth-child(2)
 /* HISTÓRICO ESCOLAR */
 
 .school{
-	height: 2400px;
+	height: 1350px;
 	background-color: #f8adec;
 }
 
