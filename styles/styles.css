@@ -129,6 +129,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 600px;
 }
 
 .content-left,
@@ -164,7 +165,6 @@ body {
 .content-right {
   text-align: right;
   background-color: #1252c7;
-  height: 400px;
 }
 
 .content-right img {
@@ -245,7 +245,7 @@ border: none;
   border-radius: 20px;
   box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
   display: flex;
-  margin: -7% auto 20px auto;
+  margin: -3% auto 20px auto;
   position: relative;
   justify-content: space-evenly;
   align-items: center;
@@ -461,7 +461,7 @@ footer p:nth-child(2)
 
 .work{
 	height: 700px;
-	background-color: #f1d763;
+	background: linear-gradient(to bottom, #cdcdf82d, #ffffff)
 }
 
 .work-text p:nth-child(1)
@@ -541,7 +541,7 @@ footer p:nth-child(2)
 
 .school{
 	height: 1350px;
-	background-color: #f8adec;
+	background: linear-gradient(to bottom, #ddf8cd2d, #ffffff)
 }
 
 .school-records p:nth-child(1)
@@ -588,11 +588,9 @@ footer p:nth-child(2)
 
 /* PROJETOS  */
 
-.project
-{
+.project{
 	height: 700px;
-	background-color: #f8bfad;
-
+	background: linear-gradient(to bottom, #f8f4cd2d, #ffffff)
 }
 
 .project-text p:nth-child(1)
@@ -622,48 +620,58 @@ footer p:nth-child(2)
 	
 }
 
-.work-text
+.project-text
 {
 	width: 500px;
 	margin: 50px 0px 0px 50px;
 	
 }
 
-.project{
-  /* display: flex; */
-  justify-content: space-between;
-  margin-left: 50px;
-  margin-right: 50px;
+.section-news {
+  padding: 50px 0; /* Espaçamento interno */
+  background-color: #f9f9f9; /* Cor de fundo da seção */
 }
 
-
-.timeline {
-  list-style: none;
-  padding: 0;
-  margin: 40px 0;
+.card-news {
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
-.item {
+.card-news .card-image {
+  height: 200px; /* Altura da imagem */
+  overflow: hidden;
+}
+
+.card-news .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-news .card-content {
   padding: 20px;
-  border-left: 2px solid #ccc;
-  position: relative;
-  margin-bottom: 20px;
 }
 
-.date {
-  font-weight: bold;
+.card-news .card-content h3 {
   margin-bottom: 10px;
+  color: #00A091;
 }
 
-.content h2 {
-  margin-top: 0;
+.card-news .card-content p {
+  margin-bottom: 20px;
+  color: #00A091;
 }
 
-.content p {
-  margin-bottom: 0;
+.card-news .card-content a {
+  display: inline-block;
+  background-color: #00A091;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 3px;
+  text-decoration: none;
 }
-
-
 
 
 
@@ -672,10 +680,6 @@ footer p:nth-child(2)
 
 html, body, ul, li {
   padding: 0;
-}
-
-.container {
-  padding: 20px 0;
 }
 
 .container h1 {
@@ -705,7 +709,7 @@ html, body, ul, li {
 .point {
   min-width: 20px;
   height: 20px;
-  background-color: #be9fe1;
+  background-color: #064f8b;
   border-radius: 100%;
   z-index: 2;
   border: 3px #333333 solid;
@@ -775,7 +779,8 @@ html, body, ul, li {
 }
 
 .timeline ul li .date h4 {
-  background-color: #e1ccec;
+  background-color: #064f8b;
+  color: white;
   width: 100px;
   text-align: center;
   padding: 5px 10px;
@@ -784,7 +789,8 @@ html, body, ul, li {
 
 .timeline ul li .content h3 {
   padding: 10px 20px;
-  background-color: #be9fe1;
+  background-color: #064f8b;
+  color: white;
   margin-bottom: 0;
   text-align: center;
   border-top-left-radius: 10px;
@@ -793,7 +799,7 @@ html, body, ul, li {
 
 .timeline ul li .content p {
   padding: 10px 20px;
-  background-color: #e1d9ec;
+  background-color: #bbd8f0;
   margin-top: 0;
   text-align: center;
   border-bottom-left-radius: 10px;
@@ -815,4 +821,71 @@ html, body, ul, li {
   width: 3px;
   left: 50%;
   background-color: #333333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* MIDIA */
+/* Esconder o sidebar em dispositivos com largura menor que 768px (tamanho de tablet e celular) */
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  /* Ajustar o padding do conteúdo para ocupar todo o espaço na tela */
+  .content {
+    padding-left: 20px; /* Adicione o padding que desejar */
+    width: 100%;
+  }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .content {
+    padding-left: 20px;
+    width: 100%;
+  }
+  .profile-section,
+  .content-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-picture {
+    margin-bottom: 20px;
+  }
+  .content-left,
+  .content-right {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .inicio p:nth-child(1),
+  .inicio p:nth-child(2),
+  .inicio p:nth-child(3),
+  .texto-sobre p:nth-child(1),
+  .texto-sobre p:nth-child(2),
+  .texto-sobre p:nth-child(3),
+  .texto-sobre p:nth-child(4) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .conteudo-sobre {
+    height: auto;
+  }
+  .conteudo-sobre img {
+    height: auto;
+    width: 80%;
+  }
 }
